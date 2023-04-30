@@ -61,7 +61,7 @@ bool hillClimbing(int (&board)[N])
 
         if(bestValue == 28)
         {
-            cout << "Reached Global Maxima after " << cnt << " moves" << endl;
+            cout <<"Reached Global Maxima after "<< cnt <<" moves"<< endl;
             printBoard(bestBoard);
             return true;
         }
@@ -88,7 +88,7 @@ bool hillClimbing(int (&board)[N])
         }
         if(!foundBetter)
         {
-            cout << "Stuck in Local Maxima after " << cnt << " moves" << endl;
+            cout <<"Stuck in Local Maxima after " << cnt << " moves"<< endl;
             printBoard(bestBoard);
             return false;
         }
